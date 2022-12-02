@@ -40,6 +40,7 @@ class Computer
   end
 end
 
+# Builder + Product
 class ComputerBuilder
   attr_reader :computer
 
@@ -72,6 +73,7 @@ class ComputerBuilder
   end
 end
 
+# Director
 builder = ComputerBuilder.new
 builder.turbo
 builder.add_cd(true)

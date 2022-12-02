@@ -1,3 +1,4 @@
+# Command
 class Command
   attr_reader :description
 
@@ -9,6 +10,7 @@ class Command
   end
 end
 
+# ConcreteCommand
 class CreateFile < Command
   def initialize(path, contents)
     super "Create file: #{path}"

@@ -1,3 +1,4 @@
+# Singleton
 module ModuleBasedLogger
   ERROR = 1
   WARNING = 2

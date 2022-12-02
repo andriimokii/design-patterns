@@ -1,3 +1,4 @@
+# RealService
 class BankAccount
   attr_reader :balance
 
@@ -16,6 +17,7 @@ class BankAccount
   end
 end
 
+# ServiceProxy
 class BankAccountProxy
   def initialize(real_object, owner_name)
     @real_object = real_object

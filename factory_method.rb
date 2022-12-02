@@ -1,3 +1,4 @@
+# ConcreteProduct1
 class Duck
   def initialize(name)
     @name = name
@@ -16,6 +17,7 @@ class Duck
   end
 end
 
+# ConcreteProduct2
 class Frog
   def initialize(name)
     @name = name
@@ -34,6 +36,7 @@ class Frog
   end
 end
 
+# Creator
 class Pond
   def initialize(number_animals)
     @animals = []
@@ -50,12 +53,14 @@ class Pond
   end
 end
 
+# ConcreteCreator1
 class DuckPond < Pond
   def new_animal(name)
     Duck.new(name)
   end
 end
 
+# ConcreteCreator2
 class FrogPond < Pond
   def new_animal(name)
     Frog.new(name)

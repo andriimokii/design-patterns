@@ -1,3 +1,4 @@
+# AbstractClass
 class Report
   def initialize
     @title = 'Monthly Report'
@@ -40,6 +41,7 @@ class Report
   end
 end
 
+# ConcreteClass1
 class HTMLReport < Report
   def output_start
     puts('<html>')
@@ -68,6 +70,7 @@ class HTMLReport < Report
   end
 end
 
+# ConcreteClass2
 class PlainTextReport < Report
   def output_head
     puts("**** #{@title} ****")

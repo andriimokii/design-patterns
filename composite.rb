@@ -1,3 +1,4 @@
+# Component
 class Task
   attr_reader :name
 
@@ -10,23 +11,7 @@ class Task
   end
 end
 
-class CompositeTask < Task
-  def initialize(name)
-    super(name)
-    @sub_tasks = []
-  end
-
-  def add_sub_task(task)
-    @sub_tasks << task
-  end
-
-  def get_time_required
-    time=0.0
-    @sub_tasks.each {|task| time += task.get_time_required}
-    time
-  end
-end
-
+# Leaf
 class AddDryIngredientsTask < Task
   def initialize
     super('Add dry ingredients')
@@ -44,6 +29,24 @@ class MixTask < Task
 
   def get_time_required
     3.0 # Mix for 3 minutes
+  end
+end
+
+# Composite
+class CompositeTask < Task
+  def initialize(name)
+    super(name)
+    @sub_tasks = []
+  end
+
+  def add_sub_task(task)
+    @sub_tasks << task
+  end
+
+  def get_time_required
+    time=0.0
+    @sub_tasks.each {|task| time += task.get_time_required}
+    time
   end
 end
 

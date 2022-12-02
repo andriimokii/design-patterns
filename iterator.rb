@@ -1,4 +1,5 @@
 # External iterator
+# # Iterator
 class ArrayIterator
   def initialize(array)
     @array = array
@@ -20,6 +21,7 @@ class ArrayIterator
   end
 end
 
+# # Collection
 array = %w[red green blue]
 i = ArrayIterator.new(array)
 while i.has_next?

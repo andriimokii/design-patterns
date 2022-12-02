@@ -1,11 +1,13 @@
 require 'find'
 
+# Expression
 class Expression
   def |(other)
     Or.new(self, other)
   end
 end
 
+# TerminalExpression1
 class FileName < Expression
   def initialize(pattern)
     @pattern = pattern
@@ -22,6 +24,7 @@ class FileName < Expression
   end
 end
 
+# TerminalExpression2
 class Bigger < Expression
   def initialize(size)
     @size = size
@@ -37,6 +40,7 @@ class Bigger < Expression
   end
 end
 
+# NonTerminalExpression
 class Or < Expression
   def initialize(expression1, expression2)
     @expression1 = expression1

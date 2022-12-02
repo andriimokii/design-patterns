@@ -1,3 +1,4 @@
+# Subject
 class Employee
   attr_reader :name, :title, :salary, :observers
 
@@ -26,6 +27,7 @@ class Employee
   end
 end
 
+# Observers
 class Payroll
   def update(changed_employee)
     puts("Cut a new check for #{changed_employee.name}!")

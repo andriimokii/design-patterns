@@ -1,3 +1,4 @@
+# Client
 class Renderer
   def render(text_object)
     text = text_object.text
@@ -8,6 +9,7 @@ class Renderer
   end
 end
 
+# Adaptee
 class BritishTextObject
   attr_reader :string, :size_mm, :colour
 
@@ -18,6 +20,7 @@ class BritishTextObject
   end
 end
 
+# Adapter
 class BritishTextObjectAdapter
   def initialize(bto)
     @bto = bto

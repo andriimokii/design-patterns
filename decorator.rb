@@ -1,3 +1,4 @@
+# ConcreteComponent
 class SimpleWriter
   def initialize(path)
     @file = File.open(path, 'w')
@@ -21,6 +22,7 @@ class SimpleWriter
   end
 end
 
+# Component
 class WriterDecorator
   def initialize(real_writer)
     @real_writer = real_writer
@@ -43,6 +45,7 @@ class WriterDecorator
   end
 end
 
+# Decorator
 class NumberingWriter < WriterDecorator
   def initialize(real_writer)
     super(real_writer)
