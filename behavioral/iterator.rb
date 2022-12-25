@@ -1,3 +1,6 @@
+# Iterator
+# - Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.)
+
 # External iterator
 # # Iterator
 class ArrayIterator
@@ -38,7 +41,7 @@ def for_each_element(array)
 end
 
 a = [10, 20, 30]
-for_each_element(a) {|element| puts("The element is #{element}")}
+for_each_element(a) { |element| puts("The element is #{element}") }
 
 # Enumerable
 class Account
@@ -73,4 +76,4 @@ end
 my_portfolio = Portfolio.new
 my_portfolio.add_account(Account.new('First', 500))
 my_portfolio.add_account(Account.new('Second', 2500))
-puts my_portfolio.any? {|account| account.balance > 2000}
+puts my_portfolio.any? { |account| account.balance > 2000 }

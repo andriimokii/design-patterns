@@ -1,3 +1,6 @@
+# Adapter
+# - Allows objects with incompatible interfaces to collaborate.
+
 # Client
 class Renderer
   def render(text_object)

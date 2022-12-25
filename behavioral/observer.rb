@@ -1,3 +1,6 @@
+# Observer
+# - Lets you define a subscription mechanism to notify multiple objects
+
 # Subject
 class Employee
   attr_reader :name, :title, :salary, :observers

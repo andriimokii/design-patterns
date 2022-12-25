@@ -1,4 +1,7 @@
 # Strategy
+# - Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+
+# Strategy
 class Formatter
   def output_report(title, text)
     raise 'Abstract method called'

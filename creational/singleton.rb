@@ -1,4 +1,7 @@
 # Singleton
+# - Lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+# Singleton
 module ModuleBasedLogger
   ERROR = 1
   WARNING = 2

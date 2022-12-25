@@ -1,9 +1,16 @@
+# Interpreter
+# - The Interpreter pattern is built around a very simple idea: Some programming problems are best solved
+#   by creating a specialized language and expressing the solution in that language.
+
 require 'find'
 
 # Expression
 class Expression
   def |(other)
     Or.new(self, other)
+  end
+
+  def evaluate
   end
 end
 

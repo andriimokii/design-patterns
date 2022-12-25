@@ -1,3 +1,6 @@
+# Factory method
+# - Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
 # ConcreteProduct1
 class Duck
   def initialize(name)
